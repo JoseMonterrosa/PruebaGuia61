@@ -111,6 +111,7 @@ function addProd(){
   			}
 	}).then(response=>response.json()).then(data=>addresult=data);
 	obtenerProductos();
+	obtenerProductos();
 
 	//para limpiar los inputs
 	document.getElementById("nFot").value="";
@@ -118,6 +119,7 @@ function addProd(){
 	document.getElementById('nTit').value="";
 	document.getElementById('nDes').value="";
 	document.getElementById('nCat').value="";
+	obtenerProductos();
 }
 //
 
