@@ -32,7 +32,8 @@ function borrarProducto(id) {
 					break;
 				case 404: alert("producto no existe"); break;
 			}
-		});		
+		});
+				
 	}
 
 function codigoCat(catstr) {
