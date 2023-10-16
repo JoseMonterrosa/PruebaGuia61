@@ -5,7 +5,7 @@ function crearBoton(id){
 	return boton;
 }
 function obtenerProductos() {
-	fetch('https://retoolapi.dev/uj9yXH/productos')
+	fetch('https://retoolapi.dev/SfRpNj/productos')
 		.then(res => res.json())
 		.then(data => {
 			productos = data;
@@ -21,7 +21,7 @@ function obtenerProductos() {
 //metodo para borrar los productos
 function borrarProducto(id) {
 	var delresult;
-	var url = 'https://retoolapi.dev/uj9yXH/productos/'+id;
+	var url = 'https://retoolapi.dev/SfRpNj/productos/'+id;
 
 	fetch(url, { method: "DELETE" })
 		.then(res => res.status)
@@ -103,7 +103,7 @@ function addProd(){
 		console.log(error);
 	}
 	var addresult;
-	fetch('https://retoolapi.dev/uj9yXH/productos/',
+	fetch('https://retoolapi.dev/SfRpNj/productos/',
 	{ method:"POST",
 	body: JSON.stringify(nProd),
   	headers: {
